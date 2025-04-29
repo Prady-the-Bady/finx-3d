@@ -1,0 +1,27 @@
+"use client";
+
+import { PageLayout } from "@/components/page-layout";
+
+export default function LendingPage() {
+  return (
+    <PageLayout title="Lending & Borrowing">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="p-6 bg-slate-900 rounded-2xl shadow-md">
+          <h2 className="text-xl font-bold mb-4">Lend Your Crypto</h2>
+          <p className="mb-2">Earn passive income by lending your crypto assets securely.</p>
+          <button className="mt-4 px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded-md">
+            Start Lending
+          </button>
+        </div>
+
+        <div className="p-6 bg-slate-900 rounded-2xl shadow-md">
+          <h2 className="text-xl font-bold mb-4">Borrow Against Your Assets</h2>
+          <p className="mb-2">Get instant liquidity without selling your favorite coins.</p>
+          <button className="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md">
+            Start Borrowing
+          </button>
+        </div>
+      </div>
+    </PageLayout>
+  );
+}
